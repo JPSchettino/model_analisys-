@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+validation_cpu/
+runs/
+results/
+*.zip
+*.tmp
+.DS_Store
+notebook_validation.log

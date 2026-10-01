@@ -1,0 +1,12 @@
+{
+  "notebook_schema": "valid",
+  "all_code_cells_cpu": "passed",
+  "preset": "smoke",
+  "budget": 24,
+  "cuda_tested": false,
+  "llm_weights_loaded": false,
+  "unit_tests_passed": 9,
+  "end_to_end_episodes": 192,
+  "purpose": "Software verification only, not the confirmatory experiment",
+  "core_sha256": "e15b083445e970b7dccdc3081efe9cbcd9987e24434dc6d6f56468e2976f22d5"
+}
