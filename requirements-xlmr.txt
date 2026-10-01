@@ -1,0 +1,14 @@
+# Versões da execução ed1cec923ce3. PyTorch/CUDA são fornecidos pelo Colab.
+# Fora do Colab, instale um PyTorch >=2.3 apropriado à sua plataforma antes.
+transformers==4.48.3
+tokenizers==0.21.4
+sentencepiece==0.2.2
+numpy==2.1.3
+pandas==2.2.3
+scikit-learn==1.6.1
+scipy==1.16.3
+statsmodels==0.14.6
+requests==2.32.4
+tqdm==4.67.3
+safetensors==0.8.0
+packaging==26.3

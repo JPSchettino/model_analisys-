@@ -1,0 +1,16 @@
+{
+  "seed": 12,
+  "max_length": 64,
+  "epochs": 4,
+  "lr": 2e-05,
+  "dropout": 0.1,
+  "batch_size": 8,
+  "gradient_accumulation": 4,
+  "eval_batch_size": 8,
+  "lambda_ei": 0.5,
+  "lambda_re": 0.5,
+  "train_languages": [
+    "en",
+    "pt"
+  ]
+}

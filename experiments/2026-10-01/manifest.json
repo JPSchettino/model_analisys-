@@ -1,0 +1,66 @@
+{
+  "config": {
+    "seed": 12,
+    "max_length": 64,
+    "epochs": 4,
+    "lr": 2e-05,
+    "dropout": 0.1,
+    "batch_size": 8,
+    "gradient_accumulation": 4,
+    "eval_batch_size": 8,
+    "lambda_ei": 0.5,
+    "lambda_re": 0.5,
+    "train_languages": [
+      "en",
+      "pt"
+    ]
+  },
+  "model_id": "FacebookAI/xlm-roberta-base",
+  "model_revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+  "sources": {
+    "en": {
+      "ER": "6af98f52f26daef4dd76fe9404e165419e5193bb",
+      "IP": "dc806b3aab4f45b36f73bc39f043d6cc430ef17b",
+      "EX": "a85bd077317d7413985632d0970188bf6a32f11f"
+    },
+    "pt": {
+      "ER": "d53a13f9bf46b109a91ee11c652c652a7567759e",
+      "IP": "f1951a93abb1fa82ab5f9532328df60d5209c853",
+      "EX": "dab8fea5589075704bd74eaf677844862b86033b"
+    }
+  },
+  "code_sha256": "238506ec03686258bc04ef13f8204d1ea4de7ab9fd1cc0445129269c94e77d87",
+  "baseline_sha256": "ca91bf35da243ce0ee74f200724efb4c882a2fc78605b940100dccf2970c6f3b",
+  "additional_baseline_sha256": "44f971eb6d34c4ea85de2e2754f2374c899987defda6411e99684ed1371d98ae",
+  "runtime_versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.48.3",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1"
+  },
+  "run_id": "ed1cec923ce3",
+  "status": "completed",
+  "selection": "best validation PT macro-F1; untouched held-out EN/PT test",
+  "train_count_per_language": 1850,
+  "validation_count_per_language": 621,
+  "test_count_per_language": 613,
+  "frozen_seeker": true,
+  "saved_checkpoint_excludes_frozen_seeker": true,
+  "architecture_adaptations": [
+    "Modern XLM-R encoders",
+    "Character-offset rationale alignment",
+    "Ignore missing/unmatched rationale spans",
+    "No supervision on special/padding tokens",
+    "Mask padding in cross-attention",
+    "Frozen seeker in eval mode",
+    "Bilingual level supervision; rationale supervision only on EN",
+    "Group-disjoint split"
+  ],
+  "torch": "2.11.0+cu128",
+  "transformers": "4.48.3",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "sklearn": "1.6.1",
+  "gpu": "NVIDIA A100-SXM4-40GB"
+}

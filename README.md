@@ -1,3 +1,60 @@
+# EPITOME com XLM-R — avaliação em português
+
+Adaptação multilíngue do EPITOME usada na reavaliação de 01/10/2026.
+O fluxo atual está em [`src/epitome_xlmr.py`](src/epitome_xlmr.py) e no
+[`notebook do Colab`](notebooks/EPITOME_XLMR_JP.ipynb).
+
+## Executar no Colab
+
+[Abrir no Colab](https://colab.research.google.com/github/JPSchettino/model_analisys-/blob/main/notebooks/EPITOME_XLMR_JP.ipynb)
+
+1. Selecione GPU e execute as células.
+2. Envie `baseline_original.csv` e `baseline_classificador_pares_pt.csv`, presentes no ZIP `resultados_epitome_xlmr.zip` da execução anterior. São os mesmos 60 pares com os rótulos das duas rodadas anteriores; o código confere a correspondência antes do treino.
+3. Autorize o Drive. Resultados e checkpoints ficam em `Meu Drive/EPITOME_XLMR_JP/run_...`.
+4. O notebook gera `resultados_epitome_xlmr.zip`. Os pesos permanecem no Drive e ficam fora do ZIP (aproximadamente 3,5 GB no total).
+
+O notebook público solicita os arquivos de avaliação, em vez de incorporar seus rótulos ao código. As fontes de treino EN/PT são públicas e fixadas por commit e hash. O conjunto de enunciados/respostas usado no projeto também está em `dataset/avalia_modelos.csv`, mas esse arquivo não contém os rótulos das avaliações anteriores.
+
+## Método
+
+- Dois encoders `FacebookAI/xlm-roberta-base`, seeker congelado, atenção cruzada, classificação dos níveis 0/1/2 e extração de rationales.
+- Três avaliadores: ER (reações emocionais), IP (interpretações) e EX (explorações).
+- Treino bilíngue para níveis, rationales supervisionadas somente em inglês com trechos alinháveis.
+- Separação por grupos de enunciado, mantendo duplicatas e traduções juntas.
+- Seleção por Macro-F1 de validação PT e teste separado EN/PT.
+- Quatro épocas, seed12, comprimento64, learning rate2e-5, batch efetivo32; configuração em `config/epitome_xlmr.json`.
+- Comparações primárias: teste exato pareado dos sinais e Holm sobre nove contrastes.
+- Regressão suplementar com erro agrupado por enunciado, detectando ausência de variação e separação antes de estimar OR.
+
+## Reanalisar uma execução concluída, sem treino
+
+Use um ambiente com PyTorch >=2.3, adequado à plataforma, e depois:
+
+```bash
+python -m pip install -r requirements-xlmr.txt
+python scripts/analyze_epitome_results.py --input resultados_epitome_xlmr.zip --output resultados_corrigidos
+python -m unittest discover -s tests -v
+```
+
+Também é aceito o caminho de uma pasta extraída em `--input`. O script gera distribuições, testes exatos/Holm, regressão corrigida, tabela de teste quando há métricas e um resumo da análise. Ele não carrega checkpoints nem baixa pesos.
+
+## Registro da execução usada no artigo
+
+Run `ed1cec923ce3`: A10040GB, Torch2.11.0+cu128, Transformers4.48.3, NumPy2.1.3, pandas2.2.3 e scikit-learn1.6.1. Divisão efetiva por idioma: 1.850 treino, 621 validação e 613 teste. A versão do scikit-learn influencia o agrupamento dos folds; as versões da execução estão fixadas em `requirements-xlmr.txt`.
+
+`experiments/2026-10-01/epitome_xlmr_used.py` preserva exatamente o código executado e seu SHA-256 corresponde ao manifesto. É um registro histórico. A versão recomendada em `src/epitome_xlmr.py` acrescenta a correção da regressão ER e esclarece o texto sobre validação humana. Isso não altera os pesos treinados, os rótulos nem os testes pareados. Consulte [CHANGELOG_XLMR.md](CHANGELOG_XLMR.md).
+
+Alterar o código cria outra identidade de execução/pasta no notebook. Para corrigir somente as tabelas de um treino existente, use o script de análise acima, sem executar novamente o treino.
+
+Os avaliadores têm limites: classes pouco frequentes podem não ser previstas, níveis PT vêm de traduções anotadas em EN, e os escores não medem eficácia clínica. A avaliação humana de comportamentos MI e a anotação específica ER/IP/EX são avaliações complementares. Este repositório contém o avaliador de empatia, não os pesos do modelo de suporte a álcool e saúde.
+
+## Código de origem e atribuição
+
+Baseado em Sharma et al. (2020), [A Computational Approach to Understanding Empathy Expressed in Text-Based Mental Health Support](https://aclanthology.org/2020.emnlp-main.425/). O código original e suas instruções foram preservados abaixo; `requirements.txt`, `src/train.py` e `src/test.py` correspondem ao fluxo legado. Para XLM-R use as entradas indicadas acima.
+
+---
+
+## Documentação original (fluxo legado)
 # Empathy in Text-based Mental Health Support
 This repository contains codes and dataset access instructions for the [EMNLP 2020 publication](https://arxiv.org/pdf/2009.08441) on understanding empathy expressed in text-based mental health support.
 
@@ -135,4 +192,5 @@ rationales: Portions of the response_post that are supporting evidences or ratio
 ```
 
 For accessing the TalkLife portion of our dataset for non-commercial use, please contact the TalkLife team [here](mailto:research@talklife.co). 
+
 
