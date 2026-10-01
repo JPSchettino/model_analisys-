@@ -1,0 +1,127 @@
+{
+  "ER": {
+    "en_train": {
+      "no_rationale_expected": 1237,
+      "aligned": 516,
+      "rationale_outside_truncation": 89,
+      "unmatched_rationale": 6,
+      "missing_positive_rationale": 2,
+      "seeker_truncated": 397,
+      "response_truncated": 546
+    },
+    "en_validation": {
+      "no_rationale_expected": 412,
+      "rationale_outside_truncation": 34,
+      "aligned": 174,
+      "unmatched_rationale": 1,
+      "seeker_truncated": 145,
+      "response_truncated": 202
+    },
+    "en_test": {
+      "no_rationale_expected": 388,
+      "aligned": 197,
+      "rationale_outside_truncation": 25,
+      "unmatched_rationale": 3,
+      "seeker_truncated": 132,
+      "response_truncated": 183
+    },
+    "pt_train": {
+      "not_supervised_for_this_language": 1850,
+      "seeker_truncated": 410,
+      "response_truncated": 566
+    },
+    "pt_validation": {
+      "not_supervised_for_this_language": 621,
+      "seeker_truncated": 141,
+      "response_truncated": 209
+    },
+    "pt_test": {
+      "not_supervised_for_this_language": 613,
+      "seeker_truncated": 132,
+      "response_truncated": 188
+    }
+  },
+  "IP": {
+    "en_train": {
+      "aligned": 830,
+      "rationale_outside_truncation": 26,
+      "no_rationale_expected": 977,
+      "missing_positive_rationale": 9,
+      "unmatched_rationale": 8,
+      "seeker_truncated": 397,
+      "response_truncated": 546
+    },
+    "en_validation": {
+      "no_rationale_expected": 308,
+      "aligned": 297,
+      "rationale_outside_truncation": 11,
+      "unmatched_rationale": 5,
+      "seeker_truncated": 145,
+      "response_truncated": 202
+    },
+    "en_test": {
+      "no_rationale_expected": 341,
+      "aligned": 262,
+      "rationale_outside_truncation": 6,
+      "missing_positive_rationale": 1,
+      "unmatched_rationale": 3,
+      "seeker_truncated": 132,
+      "response_truncated": 183
+    },
+    "pt_train": {
+      "not_supervised_for_this_language": 1850,
+      "seeker_truncated": 408,
+      "response_truncated": 566
+    },
+    "pt_validation": {
+      "not_supervised_for_this_language": 621,
+      "seeker_truncated": 140,
+      "response_truncated": 210
+    },
+    "pt_test": {
+      "not_supervised_for_this_language": 613,
+      "seeker_truncated": 132,
+      "response_truncated": 188
+    }
+  },
+  "EX": {
+    "en_train": {
+      "no_rationale_expected": 1552,
+      "aligned": 282,
+      "rationale_outside_truncation": 15,
+      "missing_positive_rationale": 1,
+      "seeker_truncated": 397,
+      "response_truncated": 546
+    },
+    "en_validation": {
+      "no_rationale_expected": 533,
+      "aligned": 84,
+      "rationale_outside_truncation": 4,
+      "seeker_truncated": 145,
+      "response_truncated": 202
+    },
+    "en_test": {
+      "aligned": 90,
+      "no_rationale_expected": 519,
+      "rationale_outside_truncation": 3,
+      "unmatched_rationale": 1,
+      "seeker_truncated": 132,
+      "response_truncated": 183
+    },
+    "pt_train": {
+      "not_supervised_for_this_language": 1850,
+      "seeker_truncated": 411,
+      "response_truncated": 566
+    },
+    "pt_validation": {
+      "not_supervised_for_this_language": 621,
+      "seeker_truncated": 140,
+      "response_truncated": 209
+    },
+    "pt_test": {
+      "not_supervised_for_this_language": 613,
+      "seeker_truncated": 132,
+      "response_truncated": 188
+    }
+  }
+}

@@ -1,0 +1,15 @@
+\begin{tabular}{lllrrrrrr}
+\toprule
+metric & model\_A & model\_B & A\_score\_higher & B\_score\_higher & ties & p\_exact\_paired\_sign & p\_holm\_9 & significant\_at\_0\_05 \\
+\midrule
+ER & GEMMA & LLAMA & 0 & 2 & 18 & 0.50000 & 1.00000 & False \\
+ER & GEMMA & GPT4 & 0 & 0 & 20 & 1.00000 & 1.00000 & False \\
+ER & LLAMA & GPT4 & 2 & 0 & 18 & 0.50000 & 1.00000 & False \\
+IP & GEMMA & LLAMA & 0 & 0 & 20 & 1.00000 & 1.00000 & False \\
+IP & GEMMA & GPT4 & 0 & 0 & 20 & 1.00000 & 1.00000 & False \\
+IP & LLAMA & GPT4 & 0 & 0 & 20 & 1.00000 & 1.00000 & False \\
+EX & GEMMA & LLAMA & 5 & 5 & 10 & 1.00000 & 1.00000 & False \\
+EX & GEMMA & GPT4 & 12 & 1 & 7 & 0.00342 & 0.02734 & True \\
+EX & LLAMA & GPT4 & 11 & 0 & 9 & 0.00098 & 0.00879 & True \\
+\bottomrule
+\end{tabular}

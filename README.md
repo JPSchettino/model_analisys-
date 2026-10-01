@@ -9,11 +9,23 @@ O fluxo atual está em [`src/epitome_xlmr.py`](src/epitome_xlmr.py) e no
 [Abrir no Colab](https://colab.research.google.com/github/JPSchettino/model_analisys-/blob/main/notebooks/EPITOME_XLMR_JP.ipynb)
 
 1. Selecione GPU e execute as células.
-2. Envie `baseline_original.csv` e `baseline_classificador_pares_pt.csv`, presentes no ZIP `resultados_epitome_xlmr.zip` da execução anterior. São os mesmos 60 pares com os rótulos das duas rodadas anteriores; o código confere a correspondência antes do treino.
+2. Os arquivos de comparação são baixados da pasta pública `results/2026-10-01/`. Para usar outros arquivos, altere `USE_PUBLISHED_BASELINES` para `False` e envie seus CSVs. São os mesmos 60 pares com os rótulos das duas rodadas anteriores; o código confere a correspondência antes do treino.
 3. Autorize o Drive. Resultados e checkpoints ficam em `Meu Drive/EPITOME_XLMR_JP/run_...`.
 4. O notebook gera `resultados_epitome_xlmr.zip`. Os pesos permanecem no Drive e ficam fora do ZIP (aproximadamente 3,5 GB no total).
 
-O notebook público solicita os arquivos de avaliação, em vez de incorporar seus rótulos ao código. As fontes de treino EN/PT são públicas e fixadas por commit e hash. O conjunto de enunciados/respostas usado no projeto também está em `dataset/avalia_modelos.csv`, mas esse arquivo não contém os rótulos das avaliações anteriores.
+As entradas de avaliação e as predições das rodadas anteriores estão publicadas junto aos resultados. As fontes de treino EN/PT são públicas e fixadas por commit e hash. O conjunto de enunciados/respostas usado no projeto também está em `dataset/avalia_modelos.csv`, mas esse arquivo não contém os rótulos das avaliações anteriores.
+
+## Resultados disponíveis
+
+[Resultados e tabelas da execução](results/2026-10-01/README.md), incluindo as 60 predições, métricas por classe, históricos, divisões e tabelas LaTeX corrigidas. A análise pode ser refeita sem treinar.
+
+| Mecanismo | Macro-F1 no teste PT |
+|---|---:|
+| ER | 0,49736 |
+| IP | 0,56398 |
+| EX | 0,56819 |
+
+Em EX, Gemma e Llama têm escores maiores que GPT4 nas comparações pareadas com Holm (p = 0,02734 e 0,00879). Os limites do avaliador acompanham as tabelas. Conferência de integridade e métricas: `python scripts/verify_published_results.py`.
 
 ## Método
 

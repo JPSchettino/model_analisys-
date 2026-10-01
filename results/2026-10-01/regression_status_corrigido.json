@@ -1,0 +1,22 @@
+{
+  "ER": {
+    "available": false,
+    "reason": "Complete or quasi-complete separation: constant outcome within model groups; ordinary logistic MLE is not finite",
+    "constant_outcome_models": [
+      "GEMMA",
+      "GPT4"
+    ],
+    "n_clusters": 20
+  },
+  "IP": {
+    "available": false,
+    "reason": "Only one observed score level"
+  },
+  "EX": {
+    "available": true,
+    "fit_type": "binary_logistic_two_observed_levels",
+    "n_clusters": 20,
+    "warnings": [],
+    "note": "Small sample: use the exact paired tests as the primary analysis."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "en_ER": {
+    "url": "https://raw.githubusercontent.com/behavioral-data/Empathy-Mental-Health/0e11f98901527550885dbf253bd2af92dbcec43b/dataset/emotional-reactions-reddit.csv",
+    "git_blob": "6af98f52f26daef4dd76fe9404e165419e5193bb",
+    "sha256": "225b28ffdc257f8a997d557eb937e78b68235e6203c87c7e2203d00fef8545cc",
+    "rows": 3084
+  },
+  "en_IP": {
+    "url": "https://raw.githubusercontent.com/behavioral-data/Empathy-Mental-Health/0e11f98901527550885dbf253bd2af92dbcec43b/dataset/interpretations-reddit.csv",
+    "git_blob": "dc806b3aab4f45b36f73bc39f043d6cc430ef17b",
+    "sha256": "2cedbe4252c919d22a6f46685afa16d3192a91e3306c2d4a386be12a30ad3f29",
+    "rows": 3084
+  },
+  "en_EX": {
+    "url": "https://raw.githubusercontent.com/behavioral-data/Empathy-Mental-Health/0e11f98901527550885dbf253bd2af92dbcec43b/dataset/explorations-reddit.csv",
+    "git_blob": "a85bd077317d7413985632d0970188bf6a32f11f",
+    "sha256": "9efa1af8e0537c16894379598f2076cb380ae18aacd9a8d26ebd381f5b7f9645",
+    "rows": 3084
+  },
+  "pt_ER": {
+    "url": "https://raw.githubusercontent.com/JPSchettino/model_analisys-/ff0379ea9eaab237be50cfff2826a5cff43315e1/dataset/emotional-reactions-reddit.csv",
+    "git_blob": "d53a13f9bf46b109a91ee11c652c652a7567759e",
+    "sha256": "81de530f0707a65bdc3f5e320ced14a4d2caa234b2dbcdfc007c9d565325c118",
+    "rows": 3084
+  },
+  "pt_IP": {
+    "url": "https://raw.githubusercontent.com/JPSchettino/model_analisys-/ff0379ea9eaab237be50cfff2826a5cff43315e1/dataset/interpretations-reddit.csv",
+    "git_blob": "f1951a93abb1fa82ab5f9532328df60d5209c853",
+    "sha256": "b81760ede362b0a001a5261daa769d80be7cde0cd9588d34973a187b313d2808",
+    "rows": 3084
+  },
+  "pt_EX": {
+    "url": "https://raw.githubusercontent.com/JPSchettino/model_analisys-/ff0379ea9eaab237be50cfff2826a5cff43315e1/dataset/explorations-reddit.csv",
+    "git_blob": "dab8fea5589075704bd74eaf677844862b86033b",
+    "sha256": "603af844ac5c1f4afc18b742c637bd4fea909b59fd7867a90aa7c49c3e7f48bd",
+    "rows": 3084
+  },
+  "alinhamento_ER": {
+    "method": "row_position_in_pinned_files",
+    "labels_identical": true,
+    "id_matches": 3061,
+    "id_mismatch_row_ids": [
+      44,
+      233,
+      340,
+      378,
+      495,
+      624,
+      790,
+      819,
+      948,
+      994,
+      1260,
+      1265,
+      1297,
+      1518,
+      1601,
+      1919,
+      2128,
+      2264,
+      2400,
+      2444,
+      2582,
+      2621,
+      2684
+    ]
+  },
+  "alinhamento_IP": {
+    "method": "row_position_in_pinned_files",
+    "labels_identical": true,
+    "id_matches": 3083,
+    "id_mismatch_row_ids": [
+      495
+    ]
+  },
+  "alinhamento_EX": {
+    "method": "row_position_in_pinned_files",
+    "labels_identical": true,
+    "id_matches": 3061,
+    "id_mismatch_row_ids": [
+      44,
+      233,
+      340,
+      378,
+      495,
+      624,
+      790,
+      819,
+      948,
+      994,
+      1260,
+      1265,
+      1297,
+      1518,
+      1601,
+      1919,
+      2128,
+      2264,
+      2400,
+      2444,
+      2582,
+      2621,
+      2684
+    ]
+  }
+}

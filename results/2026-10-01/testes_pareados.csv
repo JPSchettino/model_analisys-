@@ -1,0 +1,10 @@
+metric,model_A,model_B,A_score_higher,B_score_higher,ties,p_exact_paired_sign,p_holm_9,significant_at_0_05
+ER,GEMMA,LLAMA,0,2,18,0.5,1.0,False
+ER,GEMMA,GPT4,0,0,20,1.0,1.0,False
+ER,LLAMA,GPT4,2,0,18,0.5,1.0,False
+IP,GEMMA,LLAMA,0,0,20,1.0,1.0,False
+IP,GEMMA,GPT4,0,0,20,1.0,1.0,False
+IP,LLAMA,GPT4,0,0,20,1.0,1.0,False
+EX,GEMMA,LLAMA,5,5,10,1.0,1.0,False
+EX,GEMMA,GPT4,12,1,7,0.00341796875,0.02734375,True
+EX,LLAMA,GPT4,11,0,9,0.0009765625,0.0087890625,True

@@ -1,0 +1,10 @@
+metric,model,n,count_0,count_1,count_2,mean_ordinal_score_descriptive
+ER,GEMMA,20,20,0,0,0.0
+ER,LLAMA,20,18,2,0,0.1
+ER,GPT4,20,20,0,0,0.0
+IP,GEMMA,20,20,0,0,0.0
+IP,LLAMA,20,20,0,0,0.0
+IP,GPT4,20,20,0,0,0.0
+EX,GEMMA,20,7,0,13,1.3
+EX,LLAMA,20,7,0,13,1.3
+EX,GPT4,20,18,0,2,0.2

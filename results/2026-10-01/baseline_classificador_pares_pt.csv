@@ -1,0 +1,61 @@
+id,seeker_post,response_post,ER_label,IP_label,EX_label
+GEMMA,"""Estou me sentindo muito estressado no trabalho ultimamente.""",Entendo. E o que está acontecendo no seu trabalho?,1,0,2
+LLAMA,"""Estou me sentindo muito estressado no trabalho ultimamente.""","Então, o que está acontecendo no seu trabalho?",0,0,2
+GPT4,"""Estou me sentindo muito estressado no trabalho ultimamente.""","""Entendo que o estresse no trabalho pode ser muito desafiador. O que acha de começarmos identificando os principais fatores que estão contribuindo para esse estresse?""",0,0,2
+GEMMA,"""Eu quero parar de fumar, mas não sei por onde começar.""","Bem, há muitos bons recursos disponíveis para você se preparar para parar. Você pode tentar o medicamento, há terapia comportamental, há grupos de apoio. O que você acha disso?",0,0,2
+LLAMA,"""Eu quero parar de fumar, mas não sei por onde começar.""","Então você está pronto para parar de fumar, mas não tem certeza de como fazer isso.",0,0,0
+GPT4,"""Eu quero parar de fumar, mas não sei por onde começar.""","""Parar de fumar é um grande passo. Vamos explorar algumas estratégias que podem ajudá-lo a iniciar esse processo, como definir metas pequenas e procurar suporte.""",0,0,0
+GEMMA,"""Tenho dificuldade em manter uma rotina de exercícios.""","Bem, você não é o único. Muitas pessoas têm dificuldade em manter uma rotina de exercícios.",1,0,0
+LLAMA,"""Tenho dificuldade em manter uma rotina de exercícios.""","Ok. Então, o que você gosta de fazer quando decide ir para a academia?",0,0,2
+GPT4,"""Tenho dificuldade em manter uma rotina de exercícios.""","""Manter uma rotina de exercícios pode ser difícil. Que tal discutirmos algumas atividades físicas que você goste e como podemos incorporá-las em sua rotina diária?""",0,0,2
+GEMMA,"""Eu sinto que estou sempre cansado, mesmo quando durmo o suficiente.""",Hmm. Tem quanto tempo que você se sente muito cansado?,0,0,2
+LLAMA,"""Eu sinto que estou sempre cansado, mesmo quando durmo o suficiente.""",Então você está cansado mesmo quando está dormindo o suficiente.,0,0,0
+GPT4,"""Eu sinto que estou sempre cansado, mesmo quando durmo o suficiente.""","""Sentir-se cansado constantemente pode ser frustrante. Vamos analisar seus hábitos de sono e estilo de vida para ver onde podemos fazer melhorias.""",0,0,0
+GEMMA,"""Estou tendo problemas para me concentrar nos meus estudos.""",Então você está tendo dificuldades para se concentrar em seus estudos?,0,0,2
+LLAMA,"""Estou tendo problemas para me concentrar nos meus estudos.""","Então, o que você tem feito para tentar melhorar isso?",0,0,2
+GPT4,"""Estou tendo problemas para me concentrar nos meus estudos.""","""Concentração nos estudos é essencial. Podemos trabalhar juntos para criar um ambiente de estudo mais eficaz e técnicas de gerenciamento de tempo.""",1,0,0
+GEMMA,"""Quero melhorar minha alimentação, mas adoro comer fast food.""","Hmm. Bem, você está fazendo um bom esforço para mudar seus hábitos alimentares.",1,0,0
+LLAMA,"""Quero melhorar minha alimentação, mas adoro comer fast food.""","Então você quer melhorar sua alimentação, mas não quer desistir de comer no McDonald's ou Burger King?",0,0,2
+GPT4,"""Quero melhorar minha alimentação, mas adoro comer fast food.""","""Melhorar a alimentação enquanto ainda aprecia comida fast food é possível. Podemos planejar algumas alternativas saudáveis que você também goste.""",0,0,0
+GEMMA,"""Estou lutando para encontrar um equilíbrio entre trabalho e vida pessoal.""",Então você está se sentindo sobrecarregado?,0,0,2
+LLAMA,"""Estou lutando para encontrar um equilíbrio entre trabalho e vida pessoal.""","Então, você está se sentindo sobrecarregado com o equilíbrio entre trabalho e vida?",0,0,2
+GPT4,"""Estou lutando para encontrar um equilíbrio entre trabalho e vida pessoal.""","""Encontrar um equilíbrio entre trabalho e vida pessoal é importante. Vamos discutir suas prioridades e como você pode gerir seu tempo de forma mais eficaz.""",1,0,0
+GEMMA,"""Tenho medo de falhar quando tento algo novo.""","Então, você se sente ansioso e tem medo de falhar quando tenta algo novo?",0,0,2
+LLAMA,"""Tenho medo de falhar quando tento algo novo.""",Você tem medo de falhar quando tenta algo novo.,0,0,0
+GPT4,"""Tenho medo de falhar quando tento algo novo.""","""O medo de falhar é comum. Vamos explorar suas experiências passadas e desenvolver estratégias para lidar com esse medo de maneira mais saudável.""",1,0,0
+GEMMA,"""Estou me sentindo desmotivado e sem energia.""",Então você está se sentindo muito estressado e tem muitas coisas acontecendo.,1,0,0
+LLAMA,"""Estou me sentindo desmotivado e sem energia.""",Então você está se sentindo muito estressado e tem muitas coisas acontecendo.,1,0,0
+GPT4,"""Estou me sentindo desmotivado e sem energia.""","""Desmotivação e falta de energia podem ser sinais de algo mais profundo. Vamos identificar as causas e trabalhar em um plano para aumentar sua motivação.""",1,0,0
+GEMMA,"""Gostaria de ser mais organizado, mas nunca consigo manter as coisas em ordem.""","Então, o que você tentou fazer para se tornar mais organizado?",0,0,2
+LLAMA,"""Gostaria de ser mais organizado, mas nunca consigo manter as coisas em ordem.""","Ok. Então, você gostaria de ser mais organizado, e, no momento, parece ser um grande desafio para você.",0,0,0
+GPT4,"""Gostaria de ser mais organizado, mas nunca consigo manter as coisas em ordem.""","""Organização pode ser desafiadora. Podemos estabelecer algumas práticas simples que você pode implementar para manter suas coisas em ordem.""",1,0,0
+GEMMA,"""Estou preocupado com minha saúde mental, mas não sei a quem recorrer.""","Então, você está preocupado com sua saúde mental e não sabe a quem recorrer.",0,0,0
+LLAMA,"""Estou preocupado com minha saúde mental, mas não sei a quem recorrer.""","Bem, você está fazendo a coisa certa  ao vir me ver e compartilhar seus pensamentos. Então, o que você sente sobre a saúde mental?",1,0,2
+GPT4,"""Estou preocupado com minha saúde mental, mas não sei a quem recorrer.""","""Saúde mental é crucial. Vamos falar sobre os recursos disponíveis e como você pode começar a buscar ajuda profissional.""",1,0,0
+GEMMA,"""Quero melhorar meu relacionamento com minha família.""","Então, o que você tem feito para melhorar seu relacionamento com sua família?",0,0,2
+LLAMA,"""Quero melhorar meu relacionamento com minha família.""",Então você quer trabalhar em seu relacionamento com sua família?,0,0,2
+GPT4,"""Quero melhorar meu relacionamento com minha família.""","""Melhorar o relacionamento familiar pode trazer muitos benefícios. Vamos identificar as áreas problemáticas e desenvolver maneiras de melhorar a comunicação.""",0,0,0
+GEMMA,"""Tenho dificuldades para controlar minha ansiedade.""",Então você está se sentindo ansioso.,0,0,0
+LLAMA,"""Tenho dificuldades para controlar minha ansiedade.""","Ok. Então, você está tendo dificuldades com sua ansiedade.",0,0,0
+GPT4,"""Tenho dificuldades para controlar minha ansiedade.""","""Controlar a ansiedade pode ser difícil. Podemos trabalhar em técnicas de relaxamento e estratégias de enfrentamento que você pode usar no dia a dia.""",1,0,0
+GEMMA,"""Estou tentando economizar dinheiro, mas sempre acabo gastando demais.""",Então você está tentando gastar menos e não está conseguindo?,0,0,2
+LLAMA,"""Estou tentando economizar dinheiro, mas sempre acabo gastando demais.""","Então, o que você está tentando fazer é economizar dinheiro, mas você está percebendo que acaba gastando mais do que quer?",0,0,2
+GPT4,"""Estou tentando economizar dinheiro, mas sempre acabo gastando demais.""","""Economizar dinheiro requer disciplina. Vamos analisar seus hábitos de gasto e criar um plano de orçamento que funcione para você.""",0,0,0
+GEMMA,"""Gostaria de aprender a lidar melhor com o meu tempo.""","Ok. Então, o que você tem feito para lidar com o seu tempo?",0,0,2
+LLAMA,"""Gostaria de aprender a lidar melhor com o meu tempo.""",Claro. E o que te fez decidir que isso é algo que você quer trabalhar?,0,0,2
+GPT4,"""Gostaria de aprender a lidar melhor com o meu tempo.""","""Gerenciamento de tempo é uma habilidade valiosa. Vamos explorar suas responsabilidades e criar um cronograma que maximize sua eficiência.""",0,0,0
+GEMMA,"""Eu me sinto sozinho, mesmo quando estou cercado de pessoas.""","Então, você está se sentindo sozinho mesmo estando com amigos.",0,0,0
+LLAMA,"""Eu me sinto sozinho, mesmo quando estou cercado de pessoas.""","Hmm. Então você se sente sozinho, mesmo quando está cercado de pessoas?",0,0,2
+GPT4,"""Eu me sinto sozinho, mesmo quando estou cercado de pessoas.""","""Sentir-se sozinho é doloroso. Vamos discutir maneiras de fortalecer suas conexões sociais e encontrar atividades que possam ajudá-lo a se sentir mais conectado.""",1,0,0
+GEMMA,"""Tenho medo de falar em público.""","Ok. Então, o que você tem feito sobre isso?",0,0,2
+LLAMA,"""Tenho medo de falar em público.""","Então você disse que tem um pouco de ansiedade, hum, com falar em público.",0,0,0
+GPT4,"""Tenho medo de falar em público.""","""Falar em público é uma habilidade que pode ser desenvolvida. Podemos praticar juntos e explorar técnicas para aumentar sua confiança.""",1,0,0
+GEMMA,"""Quero começar um novo hobby, mas não sei por onde começar.""",Então você quer começar um hobby e não sabe por onde começar.,0,0,0
+LLAMA,"""Quero começar um novo hobby, mas não sei por onde começar.""","Então, você quer começar um novo hobby, mas não sabe por onde começar?",0,0,2
+GPT4,"""Quero começar um novo hobby, mas não sei por onde começar.""","""Começar um novo hobby pode ser emocionante. Vamos falar sobre seus interesses e identificar algumas atividades que você pode começar a explorar.""",1,0,0
+GEMMA,"""Estou preocupado com meu desempenho no trabalho.""","Então, o que você tentou fazer para melhorar seu desempenho no trabalho?",0,0,2
+LLAMA,"""Estou preocupado com meu desempenho no trabalho.""","Ok. Então, você está se sentindo insatisfeito com seu desempenho no trabalho?",0,0,2
+GPT4,"""Estou preocupado com meu desempenho no trabalho.""","""Desempenho no trabalho é uma preocupação válida. Vamos discutir suas metas e desenvolver um plano para melhorar suas habilidades e produtividade.""",1,0,0
+GEMMA,"""Gostaria de encontrar uma maneira de ser mais positivo no dia a dia.""","Então, o que você tem feito para ser mais positivo?",0,0,2
+LLAMA,"""Gostaria de encontrar uma maneira de ser mais positivo no dia a dia.""","Bem, há muitas maneiras de ser mais positivo. Você gostaria de compartilhar comigo o que está acontecendo no momento?",1,0,2
+GPT4,"""Gostaria de encontrar uma maneira de ser mais positivo no dia a dia.""","""Ser mais positivo no dia a dia pode melhorar muito sua qualidade de vida. Vamos identificar algumas práticas de gratidão e pensamento positivo que você pode incorporar.""",0,0,0
